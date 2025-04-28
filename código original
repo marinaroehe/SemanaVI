@@ -1,0 +1,49 @@
+package
+public class Registro {
+  private String nome;
+  private int matricula;
+  private boolean bolsista;
+  
+public Registro(String nome, int matricula, boolean bolsista) {
+  super();
+  this.nome = nome;
+  this.matricula = matricula;
+  this.bolsista = bolsista;
+}
+public String getNome() {
+return nome;
+}
+public void setNome(String nome) {
+this.nome = nome;
+}
+public int getMatricula() {
+return matricula;
+}
+public void setMatricula(int matricula) {
+this.matricula = matricula;
+}
+public boolean isBolsista() {
+return bolsista;
+}
+public void setBolsista(boolean bolsista) {
+  this.bolsista = bolsista;
+}
+
+public void mostra()
+{
+  System.out.println("Nome do aluno: " +nome);
+  System.out.println("Número de matrícula: " +matricula);
+  System.out.println("É bolsista? " +bolsista);
+}
+public void mensalidade(float val)
+{
+  if(bolsista)
+  {
+    System.out.println("Valor da mensalidade: "+val/2);
+  }
+  else
+  {
+    System.out.println("Valor da mensalidade: "+val);
+  }
+}
+}
